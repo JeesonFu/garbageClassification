@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/fragment_marginTop"
+    android:layout_marginBottom="@dimen/fragment_marginBottom"
+    android:layout_gravity="center"
+    tools:context=".ui.guide.GuideFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_guide"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="16sp"
+        android:layout_marginRight="16sp"
+        android:layout_marginBottom="16sp"
+        android:paddingTop="16sp"
+        android:paddingBottom="16sp"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp">
+        <TextView
+            android:id="@+id/shljgltl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生活垃圾管理条例"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/listview_item_textsize_20sp"
+            android:singleLine="true"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="置顶"
+            android:padding="3sp"
+            android:textColor="@color/guide_label_text"
+            android:layout_gravity="right"
+            android:background="@drawable/shape_guide_top"/>
+    </FrameLayout>
+
+    <org.bistu.garbageclassification.components.NoScrollListView
+        android:id="@+id/guide_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"/>
+
+</LinearLayout></ScrollView>

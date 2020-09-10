@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar"
+        android:paddingLeft="16sp"
+        android:paddingRight="16sp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:background="@color/theme">
+
+        <LinearLayout
+            android:id="@+id/toolbar_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/toolbar_city_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="北京市"
+                android:textColor="@color/text_white"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_arrow_drop_down_white_24dp"/>
+        </LinearLayout>
+
+        <SearchView
+            android:id="@+id/searchBar_input"
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/shape_searchbar"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@null"
+            android:queryHint="垃圾名称" />
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_gravity="center_vertical"
+            android:text="取消"
+            android:textColor="@color/text_white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/search_index"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/search_padding"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="热门搜索"
+                    android:textSize="@dimen/search_tops_textsize"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="16sp"
+                    android:singleLine="true"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/search_tops_marginLeft"
+                        android:layout_marginRight="@dimen/search_tops_marginRight"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tops_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾名称"
+                            android:textSize="@dimen/search_tops_textsize"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/search_tops_marginTop"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/tops_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾名称"
+                            android:textSize="@dimen/search_tops_textsize"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/search_tops_marginTop"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/tops_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾名称"
+                            android:textSize="@dimen/search_tops_textsize"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/search_tops_marginTop"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/tops_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾名称"
+                            android:textSize="@dimen/search_tops_textsize"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/search_tops_marginTop"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/tops_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾名称"
+                            android:textSize="@dimen/search_tops_textsize"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/search_tops_marginTop"
+                            android:singleLine="true"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/search_tops_marginLeft"
+                        android:layout_marginRight="@dimen/search_tops_marginRight"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tops_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾名称"
+                            android:textSize="@dimen/search_tops_textsize"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/search_tops_marginTop"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/tops_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾名称"
+                            android:textSize="@dimen/search_tops_textsize"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/search_tops_marginTop"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/tops_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾名称"
+                            android:textSize="@dimen/search_tops_textsize"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/search_tops_marginTop"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/tops_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾名称"
+                            android:textSize="@dimen/search_tops_textsize"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/search_tops_marginTop"
+                            android:singleLine="true"/>
+
+                        <TextView
+                            android:id="@+id/tops_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="垃圾名称"
+                            android:textSize="@dimen/search_tops_textsize"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="@dimen/search_tops_marginTop"
+                            android:singleLine="true"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/search_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16sp"
+                android:singleLine="true"
+                android:text="最近搜索"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/search_tops_textsize" />
+
+            <TextView
+                android:id="@+id/clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:singleLine="true"
+                android:text="清除搜索历史"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <org.bistu.garbageclassification.components.FlowLayout
+            android:id="@+id/search_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/search_tops_marginLeft"
+            android:layout_marginRight="@dimen/search_tops_marginRight" />
+
+    </LinearLayout>
+
+</LinearLayout>

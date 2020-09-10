@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/guide_padding">
+
+    <TextView
+        android:id="@+id/item_guide_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/guide_paddingLeft"
+        android:paddingRight="@dimen/guide_paddingRight"
+        android:paddingTop="@dimen/guide_paddingTop"
+        android:paddingBottom="@dimen/guide_paddingBottom"
+        android:text="专题指南"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/listview_item_textsize_20sp"
+        android:singleLine="true"
+        android:gravity="center"
+        android:background="@drawable/shape_guide"/>
+
+</LinearLayout>

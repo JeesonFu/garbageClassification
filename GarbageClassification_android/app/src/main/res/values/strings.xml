@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">垃圾分类</string>
+
+    <string name="home">垃圾分类</string>
+    <string name="test"> 测一测 </string>
+    <string name="guide">专题指南</string>
+
+    <!--APP底部黑框文字提示-->
+    <string name="tip_exit">再按一次退出程序</string>
+
+    <!--错误提示-->
+    <string name="error">error</string>
+    <string name="error_server">error</string>
+    <string name="error_server1">无法连接服务器</string>
+
+    <string name="title_home">垃圾分类</string>
+    <string name="title_test">测一测</string>
+    <string name="title_guide">专题</string>
+
+    <string name="searchBar">输入要搜索的垃圾名称</string>
+    <string name="btn_pic">拍照识别</string>
+
+    <string name="city_change">城市切换</string>
+    <string name="no_result">提示：很抱歉，该物品暂未收录</string>
+    <string name="no_similar">未找到类似垃圾</string>
+</resources>

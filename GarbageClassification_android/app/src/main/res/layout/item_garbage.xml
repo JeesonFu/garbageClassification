@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8sp">
+
+    <TextView
+        android:id="@+id/item_garbage_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/listview_marginLeft_16sp"
+        android:layout_marginLeft="@dimen/listview_marginRight_16sp"
+        android:text="垃圾列表"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/listview_item_textsize_20sp"
+        android:singleLine="true" />
+
+</LinearLayout>

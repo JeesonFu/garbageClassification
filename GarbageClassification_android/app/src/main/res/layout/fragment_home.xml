@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/fragment_marginTop"
+    android:layout_marginBottom="@dimen/fragment_marginBottom"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--轮播图-->
+        <com.youth.banner.Banner
+            android:id="@+id/home_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/home_banner"
+            app:image_scale_type="fit_xy"
+            app:banner_default_image="@null"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp">
+
+            <FrameLayout
+                android:id="@+id/searchBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_search_marginTop"
+                android:layout_marginBottom="@dimen/home_search_marginBottom">
+
+                <TextView
+                    android:id="@+id/search_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/home_searchbar_height"
+                    android:gravity="center"
+                    android:background="@drawable/shape_searchbar"
+                    android:hint="@string/searchBar"
+                    android:textSize="@dimen/home_search_textsize" />
+
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/search_pic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/home_searchbar_height"
+                android:layout_gravity="center"
+                android:text="@string/btn_pic"
+                android:background="@drawable/shape_btn"
+                android:textSize="@dimen/home_search_textsize"/>
+
+        </LinearLayout>
+
+        <!--底部图片部分-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/home_type_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/home_type_marginRight"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/home_pic_khs"
+                            android:layout_width="@dimen/home_type_img"
+                            android:layout_height="@dimen/home_type_img"
+                            android:background="@null"/>
+                        <TextView
+                            android:id="@+id/home_type_khs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="类别名称1"
+                            android:textSize="@dimen/home_type_textsize"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/home_type_marginLeft"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/home_pic_yh"
+                            android:layout_width="@dimen/home_type_img"
+                            android:layout_height="@dimen/home_type_img"
+                            android:background="@null"/>
+                        <TextView
+                            android:id="@+id/home_type_yh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="类别名称2"
+                            android:textSize="@dimen/home_type_textsize"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/home_type_marginTop"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/home_type_marginRight"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/home_pic_cy"
+                            android:layout_width="@dimen/home_type_img"
+                            android:layout_height="@dimen/home_type_img"
+                            android:background="@null"/>
+                        <TextView
+                            android:id="@+id/home_type_cy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="类别名称3"
+                            android:textSize="@dimen/home_type_textsize"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/home_type_marginLeft"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/home_pic_qt"
+                            android:layout_width="@dimen/home_type_img"
+                            android:layout_height="@dimen/home_type_img"
+                            android:background="@null"/>
+                        <TextView
+                            android:id="@+id/home_type_qt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="类别名称4"
+                            android:textSize="@dimen/home_type_textsize"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>

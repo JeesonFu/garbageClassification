@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/fragment_marginTop"
+    android:layout_marginBottom="@dimen/fragment_marginBottom"
+    android:orientation="vertical"
+    tools:context=".ui.test.TestFragment">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ques_marginLeft"
+        android:layout_marginRight="@dimen/ques_marginRight"
+        android:layout_marginTop="30sp"
+        android:layout_gravity="center_horizontal"
+        android:text="题目："
+        android:textSize="@dimen/ques_title_textsize"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/option_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ques_marginLeft"
+            android:layout_marginRight="@dimen/ques_marginRight"
+            android:padding="@dimen/ques_padding"
+            android:gravity="center"
+            android:text="选项内容1"
+            android:textSize="@dimen/ques_ans_textsize"
+            android:background="@drawable/shape_btn_test"/>
+
+        <TextView
+            android:id="@+id/option_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ques_marginLeft"
+            android:layout_marginRight="@dimen/ques_marginRight"
+            android:layout_marginTop="@dimen/ques_marginTop"
+            android:padding="@dimen/ques_padding"
+            android:gravity="center"
+            android:text="选项内容2"
+            android:textSize="@dimen/ques_ans_textsize"
+            android:background="@drawable/shape_btn_test"/>
+
+        <TextView
+            android:id="@+id/option_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ques_marginLeft"
+            android:layout_marginRight="@dimen/ques_marginRight"
+            android:layout_marginTop="@dimen/ques_marginTop"
+            android:padding="@dimen/ques_padding"
+            android:gravity="center"
+            android:text="选项内容3"
+            android:textSize="@dimen/ques_ans_textsize"
+            android:background="@drawable/shape_btn_test"/>
+
+        <TextView
+            android:id="@+id/option_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/ques_marginLeft"
+            android:layout_marginRight="@dimen/ques_marginRight"
+            android:layout_marginTop="@dimen/ques_marginTop"
+            android:padding="@dimen/ques_padding"
+            android:gravity="center"
+            android:text="选项内容4"
+            android:textSize="@dimen/ques_ans_textsize"
+            android:background="@drawable/shape_btn_test"/>
+    </LinearLayout>
+
+</LinearLayout>

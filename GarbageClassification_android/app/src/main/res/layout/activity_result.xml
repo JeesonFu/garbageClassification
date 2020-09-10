@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".activities.ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 增加拍照的图片 -->
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_marginTop="@dimen/result_marginTop"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/result_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/result_marginTop"
+            android:gravity="center_horizontal"
+            android:text="垃圾名称\n垃圾类别"
+            android:textSize="@dimen/typearea_textsize_large"
+            android:textColor="@color/text_black"/>
+
+        <TextView
+            android:id="@+id/noresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/result_marginTop"
+            android:gravity="center_horizontal"
+            android:text="@string/no_result"
+            android:textSize="@dimen/typearea_textsize_large"
+            android:textColor="@color/text_black"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/result_type_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/typearea_margin"
+                android:padding="3sp"
+                android:orientation="vertical"
+                android:background="@drawable/shape_khs">
+
+                <TextView
+                    android:id="@+id/result_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/typearea_margin"
+                    android:gravity="center_horizontal"
+                    android:text="类别名称"
+                    android:textSize="@dimen/typearea_textsize_large"
+                    android:textColor="@color/text_white"/>
+
+                <!-- 增加类别图片(白色的) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/typearea_marginLeft"
+                    android:layout_marginRight="@dimen/typearea_marginRight"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="类别简介"
+                        android:textSize="@dimen/typearea_textsize_medium"
+                        android:textColor="@color/text_white" />
+
+                    <TextView
+                        android:id="@+id/describe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="类别描述"
+                        android:textSize="@dimen/typearea_textsize_small"
+                        android:textColor="@color/text_white"
+                        android:layout_marginTop="@dimen/typearea_marginTop_small" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/typearea_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="投放说明"
+                        android:textSize="@dimen/typearea_textsize_medium"
+                        android:textColor="@color/text_white" />
+
+                    <TextView
+                        android:id="@+id/tip_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="投放说明"
+                        android:textSize="@dimen/typearea_textsize_small"
+                        android:textColor="@color/text_white"
+                        android:layout_marginTop="@dimen/typearea_marginTop_small" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/garbage_tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/result_marginLeft"
+                android:layout_marginRight="@dimen/result_marginRight"
+                android:text="特别说明："
+                android:textSize="18sp"
+                android:textColor="@color/text_black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/result_marginTop"
+            android:layout_marginLeft="@dimen/result_marginLeft"
+            android:layout_marginRight="@dimen/result_marginRight"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="您要找的是不是"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="10sp"
+                android:singleLine="true"/>
+
+            <org.bistu.garbageclassification.components.FlowLayout
+                android:id="@+id/similar"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_height="100sp"
+                android:layout_marginLeft="@dimen/result_marginLeft"
+                android:layout_marginRight="@dimen/result_marginRight" />
+            <TextView
+                android:id="@+id/no_similar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/result_marginLeft"
+                android:layout_marginRight="@dimen/result_marginRight"
+                android:text="@string/no_similar"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
