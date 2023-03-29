@@ -1,2 +1,2 @@
 # garbageClassification
-2020毕业设计，垃圾分类App前后端
+20毕设，垃圾分类App前后端
